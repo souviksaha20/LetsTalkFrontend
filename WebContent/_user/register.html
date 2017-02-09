@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+	rel="stylesheet" />
+<link
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+	rel="stylesheet" />
+</head>
+<body>
+	<img src="${img}/registration.jpg" alt="welcome" width="460"
+						height="200">
+		<div class="container-fluid">
+			
+				<div class="form-group col-md-12">
+					<center>
+						<label class="control-label" for="register"><h3>User
+								Information</h3></label>
+					</center>
+				</div>
+
+				<center>
+					<h1>Register User</h1>
+				</center>
+			
+
+			<div class="container">
+				<div class="row">
+					
+
+							<div class="container-fluid">
+							<div class="form-group">
+								<label for="username">
+									<h5>UserName:</h5>
+								</label>
+								<input type="text" path="text"
+									ng-model="user.username" class="form-control" />
+								</td>
+							</div>
+							</div>
+
+
+							<div class="container-fluid">
+							<div class="form-group">
+								<label for="password">
+									<h5>Password:</h5>
+								</label>
+								<input type="password" path="text"
+									ng-model="user.password" class="form-control" />
+								</td>
+							</div>
+							</div>
+							<div class="container-fluid">
+							<div class="form-group">
+								<label for="email">
+									<h5>Email Id:</h5>
+								</label>
+								<input type="text" path="text"
+									ng-model="user.email" class="form-control" />
+								</td>
+							</div>
+							</div>
+							<div class="container-fluid">
+							<div class="form-group">
+								<input type="radio" ng-model="user.role" value="STUDENT">Student
+								<input type="radio" ng-model="user.role" value="ALUMNI">Alumni
+								<input type="radio" ng-model="user.role" value="EMPLOYEE">Employee
+							</div>
+</div>
+							<button type="submit" value="Register" ng-click="registerUser()"
+								class="btn btn-success">Register</button>
+
+
+
+						</div>
+					</div>
+				</div>
+	
+{{errorMessage}}
+</body>
+</html>

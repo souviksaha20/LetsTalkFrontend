@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head >
+<meta charset="ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet"  />
+</head>
+<body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+    
+    	<div class="col-md-6">
+    		
+			  	<div class="container-fluid">
+			    	<center><h3>Please Login</h3></center>
+			 	</div>
+			  	<div class="container-fluid">
+			    	<form accept-charset="UTF-8" role="form">
+                    <fieldset>
+                    <div class="form-group">
+			    	  	<label for="username">User Name </label> <input type="text"
+								ng-model="user.username" class="form-control" />
+						</div>
+			    		<div class="form-group">
+							<label for="password">Password:</label> <input type="password"
+								ng-model="user.password" class="form-control" />
+						</div>
+			    		<div class="checkbox">
+			    	    	<label>
+			    	    		<input name="remember" type="checkbox" value="Remember Me"> Remember Me
+			    	    	</label>
+			    	    </div>
+			    	    <button type="submit" value="Submit" ng-click="submit()"
+						class="btn btn-success">Login</button>
+
+			    	</fieldset>
+			      	</form>
+			    </div>
+			</div>
+		</div>
+
+
+
+{{message}}
+</body>
+</html>
